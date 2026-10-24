@@ -1,0 +1,5 @@
+Flask
+mysql-connector-python
+python-dotenv
+Flask-Limiter
+Pillow
