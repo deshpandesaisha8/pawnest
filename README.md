@@ -124,6 +124,6 @@ Passwords are stored as salted hashes. All SQL uses parameters, never string bui
 ## 12. Team
 | Name | Role | Main contributions |
 |---|---|---|
-| Mahi Javale ([@mahieyayy](https://github.com/mahieyayy)) | Backend and database | Flask API, SQL scripts 01 to 08, triggers and procedures, README |
+| Mahi Jawle ([@mahieyayy](https://github.com/mahieyayy)) | Backend and database | Flask API, SQL scripts 01 to 08, triggers and procedures, README |
 | Vaishvi Patel ([@vaishvipatel1301](https://github.com/vaishvipatel1301)) | Testing and frontend | Testing every page, screenshots, frontend notes |
 | Saisha Deshpande ([@deshpandesaisha8](https://github.com/deshpandesaisha8)) | Queries and documentation | Demo queries, normalization review, viva notes |
