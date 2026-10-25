@@ -1,6 +1,5 @@
 # Entity-Relationship diagram
 
-GitHub draws the diagram below automatically. To get a PNG or SVG for slides, paste the code block into <https://mermaid.live> and export.
 
 ```mermaid
 erDiagram
