@@ -211,6 +211,10 @@ def app_action(aid, action):
         try:
             cur.callproc("sp_approve_application", (aid,))  # one transaction: approve, reject others, mark adopted
             con.commit()
+        except mysql.connector.Error as ex:
+            if ex.errno == 1644:  # raised by the procedure when the application is no longer open
+                return err("That application is already closed.", 409)
+            raise
         finally:
             cur.close()
             con.close()
