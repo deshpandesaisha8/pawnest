@@ -2,8 +2,6 @@
 
 A web application, backed by a MySQL database, that connects animal shelters with adopters. Built as a DBMS project-based-learning assignment.
 
-> Live demo: _add the link after deployment_  |  Team: see the table at the bottom
-
 ## 1. Problem statement
 Animal shelters in a city usually run on paper, spreadsheets and WhatsApp groups. This causes four everyday problems:
 1. **Nobody knows which shelter has space,** so some shelters overflow while others sit half empty.
