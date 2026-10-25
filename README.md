@@ -85,7 +85,7 @@ pawnest/
 ├── db.py                  # connection pools (one per database role)
 ├── mailer.py              # optional email / WhatsApp alerts
 ├── sql/                   # run in numeric order
-│   ├── 01_schema.sql ... 08_cleanup_views_indexes.sql
+│   ├── 01_schema.sql ... 08_cleanup_views_indexes.sql, 10_approval_guard.sql
 │   ├── 09_roles_optional.sql
 │   └── demo_queries.sql
 ├── static/                # index.html, css/style.css, js/app.js, js/chart.umd.js
@@ -102,7 +102,7 @@ pawnest/
    venv\Scripts\activate
    pip install -r requirements.txt
    ```
-3. In Workbench, connect as root and run the files in `sql/` **in order, 01 to 08**. Then create the app user:
+3. In Workbench, connect as root and run the files in `sql/` **in order, 01 to 08, then 10**. Then create the app user:
    ```sql
    CREATE USER 'pawnest_app'@'localhost' IDENTIFIED BY 'choose-a-password';
    GRANT SELECT, INSERT, UPDATE, DELETE, EXECUTE ON pawnest.* TO 'pawnest_app'@'localhost';
@@ -126,4 +126,4 @@ Passwords are stored as salted hashes. All SQL uses parameters, never string bui
 |---|---|---|
 | Mahi Jawle ([@mahieyayy](https://github.com/mahieyayy)) | Backend and database | Flask API, SQL scripts 01 to 08, triggers and procedures, README |
 | Vaishvi Patel ([@vaishvipatel1301](https://github.com/vaishvipatel1301)) | Testing and frontend | Testing every page, screenshots, frontend notes |
-| Saisha Deshpande ([@deshpandesaisha8](https://github.com/deshpandesaisha8)) | Queries and documentation | Demo queries, normalization review, viva notes |
+| Saisha Deshpande ([@deshpandesaisha8](https://github.com/deshpandesaisha8)) | Queries and documentation | Demo queries, normalization review |
