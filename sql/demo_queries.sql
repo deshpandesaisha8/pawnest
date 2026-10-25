@@ -69,3 +69,15 @@ SELECT pet_id, name, status FROM pets WHERE pet_id = 1;
 -- ===== Indexes =====
 SHOW INDEX FROM pets;
 EXPLAIN SELECT * FROM pets WHERE species = 'Dog' AND status = 'Available';
+
+
+-- =========================================
+-- SQL contribution: Adoption summary
+-- Purpose: Count adoption applications by status
+-- =========================================
+
+SELECT status, COUNT(*) AS total_applications
+FROM applications
+GROUP BY status
+ORDER BY total_applications DESC;
+
